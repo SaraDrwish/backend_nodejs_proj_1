@@ -1,0 +1,35 @@
+2023.09.13 13:49:54 | WARN | "password" with value "Aa#12345" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.13 13:49:59 | WARN | "firstName" is required
+2023.09.13 13:50:05 | WARN | "firstName" is required
+2023.09.13 13:50:11 | WARN | "email" is required
+2023.09.13 13:50:15 | WARN | "password" with value "Aa#12345" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.13 13:50:57 | WARN | "password" with value "Aa#12345" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.13 13:51:09 | INFO | {"firstName":"sarma","lastName":"ademl","email":"saram@gmail.com"}
+2023.09.13 13:53:15 | WARN | "password" with value "sara1234&%" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.13 13:56:19 | WARN | "password" with value "sarA1234&%" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.13 13:56:29 | WARN | "password" with value "sarA1234&" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.13 13:57:06 | WARN | "password" with value "sarA4434&" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.13 13:57:28 | WARN | "password" with value "sarAa11&" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.13 13:57:40 | WARN | "password" with value "sarAa011&" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.13 13:57:46 | WARN | "password" with value "sarAan11&" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.13 13:57:50 | WARN | "password" with value "sarAa11&" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.13 13:57:56 | WARN | "password" with value "sarA11&" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.14 13:48:59 | WARN | "email" is required
+2023.09.14 13:49:42 | WARN | "password" with value "Sasa@1234" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.14 13:50:46 | WARN | "firstName" is required
+2023.09.14 13:51:56 | WARN | "password" is required
+2023.09.14 13:52:04 | WARN | "password" with value "Saraadel#1234" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.14 13:52:21 | WARN | "password" with value "SaraAdel#1234" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.14 13:52:35 | INFO | {"firstName":"sara","lastName":"adel","email":"sasa@gmail.com","password":"SaraAdel1234"}
+2023.09.14 14:06:07 | WARN | "password" with value "asAS12!@" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.14 14:06:14 | WARN | "username" is not allowed
+2023.09.14 14:06:39 | WARN | "firstName" is not allowed
+2023.09.14 14:06:55 | WARN | "firstName" is not allowed
+2023.09.14 14:07:07 | WARN | "lastName" is required
+2023.09.14 14:07:14 | INFO | {"firstName":"salelaslel","lastName":"salelaslel","email":"salehsale@gmail.com","password":"asAS12"}
+2023.09.14 14:07:31 | INFO | {"email":"salehsale@gmail.com","password":"asAS12"}
+2023.09.14 14:11:07 | INFO | {"email":"salehsale@gmail.com","password":"asAS12"}
+2023.09.14 14:12:57 | INFO | {"email":"salehsale@gmail.com","password":"asAS12"}
+2023.09.14 14:13:04 | WARN | "firstName" is required
+2023.09.14 14:13:28 | INFO | {"firstName":"sara","lastName":"adel","email":"salehsale@gmail.com","password":"asAS12"}
+2023.09.14 14:13:57 | INFO | {"firstName":"sara","lastName":"adel","email":"salehe@gmail.com","password":"asAaS1234"}
