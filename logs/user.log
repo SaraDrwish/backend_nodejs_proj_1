@@ -25,3 +25,7 @@
 2023.09.14 14:06:55 | WARN | "firstName" is not allowed
 2023.09.14 14:07:07 | WARN | "lastName" is required
 2023.09.14 14:13:04 | WARN | "firstName" is required
+2023.09.14 23:16:48 | WARN | "firstName" is required
+2023.09.14 23:16:53 | WARN | "email" is required
+2023.09.15 00:44:19 | WARN | "firstName" is required
+2023.09.15 00:45:09 | WARN | "password" with value "Sasa@1234" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/

@@ -33,3 +33,51 @@
 2023.09.14 14:13:04 | WARN | "firstName" is required
 2023.09.14 14:13:28 | INFO | {"firstName":"sara","lastName":"adel","email":"salehsale@gmail.com","password":"asAS12"}
 2023.09.14 14:13:57 | INFO | {"firstName":"sara","lastName":"adel","email":"salehe@gmail.com","password":"asAaS1234"}
+2023.09.14 14:38:01 | INFO | {"firstName":"sara","lastName":"adel","email":"salehe@gmail.com","password":"asAaS1234"}
+2023.09.14 14:38:11 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.14 23:16:48 | WARN | "firstName" is required
+2023.09.14 23:16:53 | WARN | "email" is required
+2023.09.14 23:17:35 | INFO | {"email":"sa@gmail.com","password":"sSsS1234"}
+2023.09.14 23:17:45 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.14 23:19:56 | INFO | {"email":"sa@gmail.com","password":"sSsS1234"}
+2023.09.14 23:20:06 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 00:43:08 | INFO | {"email":"sa@gmail.com","password":"sSsS1234"}
+2023.09.15 00:43:18 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 00:44:19 | WARN | "firstName" is required
+2023.09.15 00:45:09 | WARN | "password" with value "Sasa@1234" fails to match the required pattern: /^[a-zA-Z0-9]{3,30}$/
+2023.09.15 00:45:15 | INFO | {"firstName":"lklk","lastName":"llll","email":"sasa@gmail.com","password":"Sasa1234"}
+2023.09.15 00:45:24 | INFO | {"email":"sa@gmail.com","password":"sSsS1234"}
+2023.09.15 00:45:25 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 00:45:34 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 00:45:37 | INFO | {"firstName":"lklk","lastName":"llll","email":"sasa@gmail.com","password":"Sasa1234"}
+2023.09.15 00:45:47 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 00:47:28 | INFO | {"firstName":"anas","lastName":"samy","email":"samy@gmail.com","password":"Sasa1234"}
+2023.09.15 00:47:38 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 00:47:51 | INFO | {"firstName":"anas","lastName":"samy","email":"samy@gmail.com","password":"Sasa1234"}
+2023.09.15 00:48:01 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 01:06:31 | INFO | {"firstName":"anas","lastName":"samy","email":"samy@gmail.com","password":"Sasa1234"}
+2023.09.15 01:06:31 | ERROR | User.findOne(...).timeout is not a function
+2023.09.15 01:07:09 | INFO | {"firstName":"anas","lastName":"samy","email":"samy@gmail.com","password":"Sasa1234"}
+2023.09.15 01:07:19 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 01:09:57 | INFO | {"firstName":"anas","lastName":"samy","email":"samy@gmail.com","password":"Sasa1234"}
+2023.09.15 01:10:07 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 01:14:35 | INFO | {"firstName":"anas","lastName":"samy","email":"samy@gmail.com","password":"Sasa1234"}
+2023.09.15 01:14:45 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 01:15:57 | INFO | {"firstName":"anas","lastName":"samy","email":"samy@gmail.com","password":"Sasa1234"}
+2023.09.15 01:16:07 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 19:04:36 | INFO | {"firstName":"anas","lastName":"samy","email":"samy@gmail.com","password":"Sasa1234"}
+2023.09.15 19:04:46 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 19:05:10 | INFO | {"firstName":"sam","lastName":"samy","email":"samy@gmail.com","password":"Sasa1234"}
+2023.09.15 19:05:20 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.15 19:06:47 | INFO | {"firstName":"sam","lastName":"samy","email":"samy@gmail.com","password":"Sasa1234"}
+2023.09.15 19:06:57 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.16 14:46:00 | INFO | {"firstName":"sam","lastName":"samy","email":"samy@gmail.com","password":"Sasa1234"}
+2023.09.16 14:46:10 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.16 15:02:19 | INFO | {"firstName":"ahmed","lastName":"hoss","email":"hoss@gmail.com","password":"Hoss1234"}
+2023.09.16 15:02:29 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.16 16:40:08 | INFO | {"email":"sasa@gmail.com","password":"Sasa1234"}
+2023.09.16 16:40:18 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.16 16:40:23 | INFO | {"email":"sasa@gmail.com","password":"Sasa1234"}
+2023.09.16 16:40:33 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.16 16:40:49 | INFO | {"email":"sasa@gmail.com","password":"Sasa1234"}
+2023.09.16 16:40:59 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms

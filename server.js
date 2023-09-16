@@ -7,7 +7,13 @@ require("dotenv").config()
 
 app.use(express.json())
 app.use(cookieParser())
-app.use("/api",routes)
+app.use("/api/blog" ,  express.static("./uploads"))
+
+app.use("/api", routes)
+
+// const crypto = require("crypto")
+// console.log("cryptooooo " + crypto.randomBytes(16).toString("hex"));
+
 const url = process.env.DB_CONNECTION_URL
 // console.log(url)
 mongoose.connect( url , {
