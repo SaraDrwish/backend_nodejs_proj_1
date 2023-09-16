@@ -52,8 +52,10 @@ const userController = {
 
                 res.cookie("access_token", `Berear ${token}`, {
                     httpOnly: true,
-                    maxAge: 60 * 60 * 24 * 2
-                    
+                    maxAge: 1000 *60 * 60 * 24 * 2
+
+
+                     
                 } )
 
                 console.log(token)

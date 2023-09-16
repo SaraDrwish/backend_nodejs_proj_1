@@ -34,8 +34,13 @@ const userSchema = new Schema({
         type: String,
         expires: "2d",
         trim:true
-    }]
+    }],
+    image: {
+       type: String,
+        trim:true 
+    }
 
+    
 })
 
 // قيمة محددة وعارفة القيم الي هتخش

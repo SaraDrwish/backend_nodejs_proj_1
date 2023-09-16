@@ -6,7 +6,7 @@ const fs = require("fs")
 
  
 const blogController = {
-      crateBlog : async(req, res, next)=> {
+  crateBlog : async(req, res, next)=> {
         try {
           console.log(req.body)  
           console.log(req.file)
@@ -28,6 +28,7 @@ const blogController = {
         }
 
   },
+
   getBlog: async (req, res) => {
     try {
       let blogs = await Blog.find({
@@ -51,7 +52,6 @@ const blogController = {
          var imagePath = `/api/blog/${req.file.filename}`
          title = "updated"
       }
-
       console.log(req.body._id);
       await  Blog.findByIdAndUpdate(req.body._id, {...req.body , image:imagePath} , {new:true})
       console.log(blog);
@@ -77,12 +77,26 @@ const blogController = {
          res.status(500).send({ message: error.message} ) 
     }  
 
+  },
+  
+  getAllBlogs: async (req, res) => {
+     
+    try {
+      logger.info(req.user?.firstName)
+      let blogs = await Blog.find({}).populate("owner")
+      res.send(blogs)
+
+      }
+     
+     catch (error) {
+         logger.error(error.message)
+         res.status(500).send({ message: error.message} ) 
+    }
+    
   }
 
 
   
-
-
     
  }
 

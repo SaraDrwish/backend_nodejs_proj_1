@@ -27,7 +27,9 @@ mongoose.connect( url , {
         console.log(error.message)      
 })
 
-const port = process.env.PORT || 5000 ;
-app.listen(port, ()=> {
-    console.log(`the server is running on port ${port} by sara `)
-})
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port} by sara `);
+});
+
+

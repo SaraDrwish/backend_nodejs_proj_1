@@ -50,3 +50,5 @@
 2023.09.16 16:40:33 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
 2023.09.16 16:40:49 | INFO | {"email":"sasa@gmail.com","password":"Sasa1234"}
 2023.09.16 16:40:59 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
+2023.09.16 17:42:01 | INFO | {"firstName":"sara","lastName":"ahmed","email":"Sara@gmail.com","password":"Sara1234"}
+2023.09.16 17:42:11 | ERROR | Operation `users.findOne()` buffering timed out after 10000ms
