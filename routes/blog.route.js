@@ -6,7 +6,9 @@ const auth = require("../middleware/auth.middleware")
 
 router.route("/").post(auth.authentication, blogUpload.single("/image"), blogController.crateBlog)
 .get( auth.authentication , blogController.getBlog )
+.patch( blogUpload.single("image")  , blogController.updateBlog )
 
+router.delete("/:id" ,auth.authentication  ,  blogController.deleteBlog )
 
 module.exports = router;
 

@@ -2,7 +2,9 @@
 const Blog = require("../models/blog.model")
 const loggerEvent = require("../services/logger.service")
 const logger = loggerEvent("blog")
+const fs = require("fs")
 
+ 
 const blogController = {
       crateBlog : async(req, res, next)=> {
         try {
@@ -40,18 +42,40 @@ const blogController = {
   }
   ,
 
-  updateBlog: async (req,res)=> {
-    try {
-      let blog = Blog.findByIdAndUpdate(req.body._id, req.body)
-      
+  updateBlog: async (req, res) => {
+    console.log(req.file)
+    try {  
+      if (req.file) {
+        let deletePath = req.file.path 
+        fs.unlinkSync()
+         var imagePath = `/api/blog/${req.file.filename}`
+         title = "updated"
+      }
 
+      console.log(req.body._id);
+      await  Blog.findByIdAndUpdate(req.body._id, {...req.body , image:imagePath} , {new:true})
+      console.log(blog);
+      
       await blog.save()
+      res.send()
      
     } catch (error) {
          logger.error(error.message)
          res.status(500).send({ message: error.message} ) 
     }  
 
+  },
+
+  deleteBlog: async (req, res) => {
+    try {
+      let id = req.params
+      await Blog.findByIdAndDelete(id)
+      res.send()
+      
+    }catch (error) {
+         logger.error(error.message)
+         res.status(500).send({ message: error.message} ) 
+    }  
 
   }
 
