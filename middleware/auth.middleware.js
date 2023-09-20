@@ -46,6 +46,7 @@ const authentication = async(req, res, next) => {
         delete user.password
 
         req.user = user 
+        req.token = token
 
         next()
 

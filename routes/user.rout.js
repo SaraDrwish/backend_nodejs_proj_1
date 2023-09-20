@@ -6,6 +6,8 @@ const auth = require("../middleware/auth.middleware")
 
 router.route("/:id").delete(auth.adminAuthorization, userCtrl.deleteUser)
 
+router.post("/logout" , userCtrl.logout)
+
 router.use(auth.authentication)
 router.route("/")
     .get(userCtrl.getUser)

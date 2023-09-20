@@ -3,7 +3,15 @@ const app = express()
 const routes = require("./routes")
 const mongoose = require("mongoose")
 const cookieParser = require("cookie-parser")
+const cors = require("cors")
+
 require("dotenv").config()
+
+
+app.use(cors => ( {
+        origin: "http://localhost:3000",
+        Credentials : true       
+} ))
 
 app.use(express.json())
 app.use(cookieParser())

@@ -70,7 +70,30 @@ const userController = {
         }
 
 
+    },
+
+
+      logout: async (req, res) => {
+          try {
+              let user = await User.findById(req.User._id)
+              user.tokens = user.tokens.filter((el) => {
+                  el !== req.tokens
+              })
+              await user.save()
+            res.cookie("access_token",  " ", {
+                httpOnly: true,
+                maxAge: 1000 * 60 * 60 * 24 * 2
+            })
+        }catch (error) {
+            logger.error(error.message)
+            res.status(500).send({ message: error.message} )  
+        }
+
+
     }
+      
+      
+      
 
 
 }
