@@ -46,11 +46,17 @@ const blogController = {
   updateBlog: async (req, res) => {
     console.log(req.file)
     try {  
+        let blog = await Blog.findById(req.body._id)
+        // console.log(req.file)
       if (req.file) {
-        let deletePath = req.file.path 
-        fs.unlinkSync()
+        // console.log(blog)
+        // console.log(req.body)
+        let imageName = blog.image?.split("/")[3]
+        let deletePath = `./uploads/${imageName}`
+        // let deletePath = req.file.path 
+        fs.unlinkSync(deletePath)
          var imagePath = `/api/blog/${req.file.filename}`
-         title = "updated"
+        //  title = "updated"
       }
       console.log(req.body._id);
       await  Blog.findByIdAndUpdate(req.body._id, {...req.body , image:imagePath} , {new:true})
